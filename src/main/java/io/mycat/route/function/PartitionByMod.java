@@ -42,7 +42,7 @@ import java.util.Properties;
  */
 public class PartitionByMod extends AbstractPartitionAlgorithm implements RuleAlgorithm  {
 
-	private int count;
+	protected int count;
 	@Override
 	public void init() {
 	
