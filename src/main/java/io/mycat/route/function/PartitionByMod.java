@@ -71,9 +71,9 @@ public class PartitionByMod extends AbstractPartitionAlgorithm implements RuleAl
 		
 		Map<Integer,List<Integer>> hashed=new HashMap<>();
 		
-		int total=1000_0000;//数据量
+		int total=10000000;//数据量
 		int c=0;
-		for(int i=100_0000;i<total+100_0000;i++){//假设分片键从100万开始
+		for(int i=1000000;i<total+1000000;i++){//假设分片键从100万开始
 			c++;
 			int h=hash.calculate(Integer.toString(i));
 			bucket[h]++;
